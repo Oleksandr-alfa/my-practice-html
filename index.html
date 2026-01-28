@@ -23,19 +23,39 @@
     <!-- #region header -->
     <header class="page-header">
       <div class="container">
-        <a class="header-logo-link" chref="./index.html">yachtjet</a>
-        <nav>
-          <ul class="page-nav">
+        <nav class="top-nav">
+          <a class="header-logo-link" chref="./index.html">yachtjet</a>
+
+          <ul class="header-nav-list">
             <li><a class="header-nav-link" href="#about">About</a></li>
             <li><a class="header-nav-link" href="#yachts">Yachts</a></li>
             <li><a class="header-nav-link" href="#reviews">Reviews</a></li>
           </ul>
+
+          <ul class="header-social-list">
+            <li>
+              <a href="https://www.instagram.com" target="_blank" class="link">
+                <svg class="icon icon-instagram">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" target="_blank" class="link">
+                <svg class="icon icon-youtube">
+                  <use xlink:href="icomoon/SVG/youtube.svg/#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank" class="link">
+                <svg class="icon icon-facebook">
+                  <use xlink:href="./SVG-sprite/#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </nav>
-        <ul>
-          <li><a href="https://www.instagram.com" target="_blank">i</a></li>
-          <li><a href="https://www.youtube.com" target="_blank">y</a></li>
-          <li><a href="https://www.facebook.com" target="_blank">f</a></li>
-        </ul>
       </div>
     </header>
     <!-- #endregion header -->
@@ -52,34 +72,39 @@
             unforgettable journey surrounded by breathtaking views and
             state-of-the-art amenities.
           </p>
-          <a class="hero-btn" href="">Yacht rental</a>
+          <a class="hero-btn" href="#rent">Yacht rental</a>
         </div>
       </section>
       <!-- #endregion hero -->
       <!-- #region about -->
       <section id="about" class="section-about">
         <div class="container">
-          <h2 class="about-title">
-            YachtJet fleet is here to take you on the ultimate adventure
-          </h2>
-          <p class="about-text">
-            From spacious decks to state-of-the-art technology, our yachts are
-            designed to provide the perfect blend of luxury and functionality.
-          </p>
-          <p class="about-text-two">
-            Take a look at our selection below and choose the yacht that matches
-            your needs and preferences.No matter which yacht you choose, our
-            experienced crew will ensure that your journey is smooth and
-            enjoyable. Book now and get ready for an unforgettable adventure on
-            the high seas.
-          </p>
-          <img
-            class="about-img"
-            src="./images/yahtheader.jpg"
-            alt="Yacht Fleet"
-            width="1180"
-          />
+          <div class="about-text-content">
+            <h2 class="about-title">
+              YachtJet fleet is here to take you on the ultimate adventure
+            </h2>
+            <div class="about-text">
+              <p class="about-text-one">
+                From spacious decks to state-of-the-art technology, our yachts
+                are designed to provide the perfect blend of luxury and
+                functionality.
+              </p>
+              <p class="about-text-two">
+                Take a look at our selection below and choose the yacht that
+                matches your needs and preferences.No matter which yacht you
+                choose, our experienced crew will ensure that your journey is
+                smooth and enjoyable. Book now and get ready for an
+                unforgettable adventure on the high seas.
+              </p>
+            </div>
+          </div>
         </div>
+        <img
+          class="about-img"
+          src="./images/yahtheader.jpg"
+          alt="Yacht Fleet"
+          width="1180"
+        />
       </section>
       <!-- #endregion about -->
       <!-- #region yachts -->
@@ -146,7 +171,7 @@
       </section>
       <!-- #endregion benefits -->
       <!-- #region rent -->
-      <section class="section-rent">
+      <section id="rent" class="section-rent">
         <div class="container">
           <img
             class="section-rent-img"
